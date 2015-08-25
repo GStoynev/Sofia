@@ -1,0 +1,27 @@
+Angie is an MVC application with "Individual User Accouts" security (i.e. ASP.NET Identity)
+	Helpful links about autherntication:
+		http://www.asp.net/visual-studio/overview/2013/creating-web-projects-in-visual-studio#indauth
+		http://www.asp.net/identity
+		http://www.asp.net/web-api/overview/security/external-authentication-services
+		http://blogs.msdn.com/b/webdev/archive/2013/06/27/adding-external-logins-to-your-asp-net-application-in-visual-studio-2013.aspx
+		http://www.asp.net/mvc/tutorials/mvc-5/create-an-aspnet-mvc-5-app-with-facebook-and-google-oauth2-and-openid-sign-on
+
+I have decided to convert Index.cshtml into Angular2 SPA. So I have "installed" TypeScript angular2 typings in ~/Views/Home:
+	(as a prerequisite, I installed node.js and/or npm somehow, then tsd as a global thing: npm install -g tsd@^0.6.0)
+	Also, VisualStudio has the latest TypeScript plugin; get it from "current" linke here: http://www.typescriptlang.org/
+	tsd install angular2 es6-promise rx rx-lite
+
+Next step is to follow these tutorials to get Angular2 to work, then start converting Ci=ontacts and About into Angular2 compoents:
+	https://angular.io/docs/js/latest/quickstart.html
+	
+Throw-away references (for after I'm done):
+	This guy has a working ANgular2 in VSS with Type Script, but almost no info on setup: https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2015-Final-Release-Event/TypeScript-and-Angular-2-in-Visual-Studio-2015
+
+	This is a nice boiler-plate setup - use it to see how they're doing Jasmine with Karma; check out the protractor thing, too: https://github.com/angular-class/angular2-webpack-starter
+
+	This is a great reference to get started with Angular2 straight from the source. It includes full stack (not VS-friendly) - Angular + typings + a bunch of other shit: https://libraries.io/npm/angular2/2.0.0-alpha.35
+	Note: that's a good source to see what is latest Angular2
+	
+	Is angular ready? :-) http://splintercode.github.io/is-angular-2-ready/
+
+	SPA with Angular - GOOD resource on setting up various aspects of MVC and WebAPI to support the SPA paradigm: http://www.asp.net/web-api/overview/getting-started-with-aspnet-web-api/build-a-single-page-application-(spa)-with-aspnet-web-api-and-angularjs
