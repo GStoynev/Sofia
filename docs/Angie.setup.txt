@@ -13,6 +13,11 @@ I have decided to convert Index.cshtml into Angular2 SPA. So I have "installed" 
 
 Next step is to follow these tutorials to get Angular2 to work, then start converting Ci=ontacts and About into Angular2 compoents:
 	https://angular.io/docs/js/latest/quickstart.html
+
+So I have decided to consider "Views" the root of my "root" SPA, and to add sub-spa-s under each of Views 9functionally-defined) subfolders. So I added the "root" app.ts in Views and that needed two adjustments to work:
+1. I had to add this "hint": /// <reference path="typings/angular2/angular2.d.ts"/> for the import to work.
+2. I also had to follow these directions to edit the project file to allow eperimental decorators: http://bchavez.bitarmory.com/archive/2015/07/23/enabling-decorators-support-in-typescript-1-5-visual-studio-2015.aspx
+At this point my little app.ts from here worked (https://angular.io/docs/ts/latest/quickstart.html) - I took the version for TS "Angular2 for TypeScript" selection in the dropdown
 	
 Throw-away references (for after I'm done):
 	This guy has a working ANgular2 in VSS with Type Script, but almost no info on setup: https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2015-Final-Release-Event/TypeScript-and-Angular-2-in-Visual-Studio-2015
